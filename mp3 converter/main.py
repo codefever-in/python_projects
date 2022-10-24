@@ -30,16 +30,16 @@ def converter():
     #saving the audio file
     try:
         audio.write_audiofile(f'{date}.mp3')
-        messagebox.showinfo("success",'successfully converted ! 😃')
+        messagebox.showinfo("success",'successfully converted ! 🥳')
     #handling errors
     except Exception as e:
-        messagebox.showerror('Failed ',f"Unable to download because {e}")
+        messagebox.showerror('Failed ',f"Unable to download because {e}🥺")
 
  
 # Creating object of tk class
 root = tk.Tk()
 # Setting the title, background color
-# and size of the tkinter window
+# and size of the tkinter main window
 root.geometry("520x280")
 root.title("mp4 to mp3 converter")
 root.config(background="black")
